@@ -25,10 +25,9 @@
                     <p>at 5:00 PM EDT</p>
                 </h1>
                 <h2 class="time_left">
-                <!-- Original work: (Functional if you want to look at it, just uncomment and require script.js instead.) -->
-                    <!-- TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left"> {{calculate_days_left().time }}{{ calculate_days_left().days_left + ' DAYS '}} {{calculate_days_left().hours_left + ' hours '}} {{calculate_days_left().minutes_left + ' minutes '}} {{ calculate_days_left().seconds_left + ' seconds '}} </div> -->
+              
                     TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left">
-                        
+                        {{ calculate_days_left() }}
                     </div>
                 </h2>
             </section>
@@ -90,6 +89,6 @@
         
  
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="script.js"></script>
+    <script src="2nd_script.js"></script>
 </body>
 </html>

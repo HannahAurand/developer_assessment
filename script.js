@@ -12,11 +12,16 @@ var app = new Vue({
             console.log(time);
             //Once I have the milliseconds of time between now and the webinar, I will multiply it first by 1000 to get whole seconds instead of milliseconds. Then, I divide the seconds by how many milliseconds are in an hour (1000*60*24) to calculate the amount of days from the parsed milliseconds. 
             /* tslint: disable: no - unused - variable */
-            let countdown = Math.floor(time / (1000 * 60 * 60 * 24));
+            let days_left = Math.floor(time / (1000 * 60 * 60 * 24));
             // Checking to see that countdown logs correctly.
             // console.log(countdown); 
             // now instead of just one variable, I must return a data object so that I can display the hours, minutes, and seconds until the webinar takes place. 
-            return countdown;
+            return {
+                'days_left': days_left,
+                'hours_left': hours_left,
+                'minutes_left': minutes_left,
+                'seconds_left': seconds_left
+            }
         }
     }
 })

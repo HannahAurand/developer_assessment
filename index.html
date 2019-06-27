@@ -14,7 +14,7 @@
             <h1></h1>
             <form action="POST">
                 <label for="toggler">I would like to receive a free news letter.</label>
-                <input type="toggle" name="toggler">
+                <input type="checkbox" name="news checkbox">
             </form>
             <div class="register">Register for this FREE live Webinar Here!</div>
         </header>
@@ -25,7 +25,11 @@
                     <p>at 5:00 PM EDT</p>
                 </h1>
                 <h2 class="time_left">
-                    TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left"> {{ calculate_days_left() }} </div>
+                <!-- Original work: (Functional if you want to look at it, just uncomment and require script.js instead.) -->
+                    <!-- TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left"> {{calculate_days_left().time }}{{ calculate_days_left().days_left + ' DAYS '}} {{calculate_days_left().hours_left + ' hours '}} {{calculate_days_left().minutes_left + ' minutes '}} {{ calculate_days_left().seconds_left + ' seconds '}} </div> -->
+                    TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left">
+                        
+                    </div>
                 </h2>
             </section>
 
@@ -72,7 +76,7 @@
 
             <section class="newsletter">
                 <form action="POST">
-                    <input type="toggle" name="toggler_2" value="I would like to receive a free news letter.">
+                    <input type="checkbox" name="news_checkbox" value="I would like to receive a free news letter.">
                 </form>
 
                 <div class="reserve">

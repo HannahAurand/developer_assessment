@@ -15,6 +15,7 @@ var app = new Vue({
             let countdown = Math.floor(time / (1000 * 60 * 60 * 24));
             // Checking to see that countdown logs correctly.
             // console.log(countdown); 
+            // now instead of just one variable, I must return a data object so that I can display the hours, minutes, and seconds until the webinar takes place. 
             return countdown;
         }
     }

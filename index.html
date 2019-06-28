@@ -14,9 +14,10 @@
             <h1></h1>
             <form action="POST">
                 <label for="checkbox">I would like to receive a free news letter.</label>
-                <input type="checkbox" name="news_checkbox">
+                <input type="checkbox" name="news_checkbox" id="checkbox1">
             </form>
-            <div class="register">Register for this FREE live Webinar Here!</div>
+            <p id="demo"></p>
+            <button class="register">Register for this FREE live Webinar Here!</button>
         </header>
 
             <section class="calendar">
@@ -29,7 +30,7 @@
                      TIME LEFT UNTIL THE WEBINAR STARTS:
                          <div id="time_left">
                     </div> 
-                    <div id="demo"></div>
+                    
                 </h2>
             </section>
 
@@ -76,11 +77,11 @@
 
             <section class="newsletter">
                 <form action="POST">
-                    <input type="checkbox" name="news_checkbox">I would like to receive a free news letter.
+                    <input type="checkbox" name="news_checkbox" id="checkbox2">I would like to receive a free news letter.
                 </form>
 
                 <div class="reserve">
-                    <h2 class="reserve">YES! Reserve My Spot Now!</h2>
+                    <button class="reserve">YES! Reserve My Spot Now!</button>
                 </div>
             </section>
 
@@ -91,5 +92,6 @@
  
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="clock.js"></script>
+    <script src="checkbox.js"></script>
 </body>
 </html>

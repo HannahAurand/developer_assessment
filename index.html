@@ -13,8 +13,8 @@
             <h2></h2>
             <h1></h1>
             <form action="POST">
-                <label for="toggler">I would like to receive a free news letter.</label>
-                <input type="checkbox" name="news checkbox">
+                <label for="checkbox">I would like to receive a free news letter.</label>
+                <input type="checkbox" name="news_checkbox">
             </form>
             <div class="register">Register for this FREE live Webinar Here!</div>
         </header>
@@ -26,9 +26,10 @@
                 </h1>
                 <h2 class="time_left">
               
-                    TIME LEFT UNTIL THE WEBINAR STARTS: <div id="time_left">
-                        {{ calculate_days_left() }}
-                    </div>
+                     TIME LEFT UNTIL THE WEBINAR STARTS:
+                         <div id="time_left">
+                    </div> 
+                    <div id="demo"></div>
                 </h2>
             </section>
 
@@ -75,7 +76,7 @@
 
             <section class="newsletter">
                 <form action="POST">
-                    <input type="checkbox" name="news_checkbox" value="I would like to receive a free news letter.">
+                    <input type="checkbox" name="news_checkbox">I would like to receive a free news letter.
                 </form>
 
                 <div class="reserve">
@@ -89,6 +90,6 @@
         
  
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="2nd_script.js"></script>
+    <script src="clock.js"></script>
 </body>
 </html>

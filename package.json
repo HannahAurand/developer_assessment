@@ -1,0 +1,19 @@
+{
+  "name": "agora-financial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blueboxes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahAurand/developer_assessment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannahAurand/developer_assessment/issues"
+  },
+  "homepage": "https://github.com/HannahAurand/developer_assessment#readme"
+}

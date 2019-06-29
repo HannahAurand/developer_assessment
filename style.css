@@ -2,15 +2,24 @@
 
 body {
     font-family: "Lato", sans-serif;
-    padding: 5px;
     text-align: center;
+}
+
+.container {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+.btn {
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 
 header h2 {
-    font-size: 15px;
+    font-size: 20px;
     border-bottom: 2px solid #05263a;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 25px 0;
     /* text-align: center; */
 }
 
@@ -28,7 +37,14 @@ header h1 {
     width: 300px;
 }
 .calendar {
-    background-color: #71a1be;;
+    background-color: #71a1be;
+    color: white;
+}
+
+#time_left {
+    color: darkred;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .limited_space {
@@ -44,8 +60,65 @@ header h1 {
 
 .author {
     background-color: #005282;
+    padding-top: 15px;
+    color: white;
 }
+
 @media (max-width: 991.98px) { 
+    
+    .container {
+        margin-right: 0px!important;
+        margin-left: 0px!important;
+    }
+
+    .quote {
+        padding: 10px;
+    }
+
+    .quote h1 {
+        font-weight: bold;
+    }
+
+    .author {
+        background-color: #005282;
+        min-width: 100%;
+        padding-top: 15px;
+        color: white;
+    }
+
+    .checkmark > img {
+        /* width: 100px; */
+        height: 96px;
+
+    }
+    .checkmark > p {
+        width: 300px;
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .checkmark {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 150px;
+        padding-left: 15px;
+    }
+    
+    .claim_space {
+        background-color: #05263a;
+        color: white;
+        width: 100%;
+    }
+
+        #triangle {
+            z-index: -100;
+            margin-top; -4px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid #05263a;
+          }
     
     
     body > div, section, footer {
@@ -54,11 +127,12 @@ header h1 {
         /* padding: 15px 0 15px 0; */
     }
 
-    div, section, footer > p, form, button, h1, h2, img {
+    div, footer > p, form, button, h1, h2, img {
         /* margin: 0px; */
         text-align: center;
         /* padding: 2px; */
-        padding: 15px 0 15px 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .row {
@@ -66,15 +140,21 @@ header h1 {
         margin-right: 0px!important;
     }
 
-    
+    .show_you {
+        width: 100%;
+    }
+
+    .show_you > h2 {
+        font-size: 20px;
+    }
  }
 
- @media (max-width: 1500px) {
+ /* @media (max-width: 1500px) and (min-width: 992px) {
      * {
          margin: 10px;
      }
 
      .show_you {
-         max-width: 50%;
-     }
+         max-width: 75%;
+     } */
  }

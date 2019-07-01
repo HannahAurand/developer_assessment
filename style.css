@@ -56,8 +56,6 @@ header h1 {
     margin: 5px;
 }
 
-}
-
 .author {
     background-color: #005282;
     padding-top: 15px;
@@ -110,15 +108,15 @@ header h1 {
         width: 100%;
     }
 
-        #triangle {
-            z-index: -100;
-            margin-top; -4px;
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-top: 50px solid #05263a;
-          }
+    #triangle {
+        z-index: -100;
+        margin-top; -4px;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #05263a;
+        }
     
     
     body > div, section, footer {
@@ -149,12 +147,110 @@ header h1 {
     }
  }
 
- /* @media (max-width: 1500px) and (min-width: 992px) {
-     * {
-         margin: 10px;
-     }
+  @media (max-width: 1500px) and (min-width: 992px) {
 
-     .show_you {
-         max-width: 75%;
-     } */
+    .wrapper {
+        max-width: 1200px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .claim_space {
+        background-color: #05263a;
+        color: white;
+        width: 100%;
+    }
+
+    .desktop_calendar {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white !important;
+        justify-content: center;
+    }
+
+    .calendar {
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #time_left {
+        padding-top: 65px;
+        font-size: 60px;
+    }
+
+    .quote {
+        width: 75%;
+    }
+
+    .btn-lg {
+        height: 70px;
+        margin-top: 2%;
+    }
+
+    .author {
+        background-color: #05263a;
+    }
+    .author > img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .checkmark {
+        display: flex;
+        flex-wrap: nowrap;
+        float:left;
+        max-height: 120px;
+    }
+
+    .checkmark  > img {
+        max-height: 70px;
+    }
+    
+    .checkmark > p {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .show_you {
+        background-color: lightgray!important;
+        /* margin-right: 10px;
+        margin-left: 10px; */
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .author_show {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .show_you > h2 {
+        font-size: 20px !important;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .limited_space .claim_space {
+        font-size: 20px;
+
+    }
+
+    .newsletter {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .reserve {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+     
  }

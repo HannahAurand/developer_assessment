@@ -1,5 +1,5 @@
 //I wrote this code understanding that the counter was supposed to go to the date specified in the mockup.
-
+//Unused code.
 var app = new Vue({
     el: '#time_left',
     data: {

@@ -1,30 +1,11 @@
 //CHECKBOX
 
-//1. Sync up the two checkboxes on the page so both check and uncheck at the same time.
-
-//Need a checked: y/n boolean that is available to the blue button for the alert to request the user to check the box before they can proceed.
-//Both checkboxes need to have the same class. Grab them by the class, access their value
-
-
-// function myFunction() {
-
-//     var inputs, index;
-
-//     inputs = document.getElementsByTagName('input');
-//     // for (index = 0; index < inputs.length; ++index) {
-//     // deal with inputs[index] element.
-//     inputs.forEach({
-//         if(checked) {
-//             return
-//         }
-//     })
-
-//     console.log(checkmark.checked);
-// };
-
 //IT IS BEST TO MAKE THESE FUNCTIONS TO BE REUSABLE, BUT IN THE INTEREST OF TIME, I'M MOVING ON. 
 //DONE IS BETTER THAN PERFECT.
+
+//Retrieving the first checkbox from the dom.
 var checkbox1 = document.getElementById('checkbox1');
+//Setting an event listener that triggers the code to check if the checkmark has been checked, and gets the second checkbox and sets it to "checked. Then, vice-versa."
 checkbox1.addEventListener('change', function CheckForm() {
     // console.log('listener called');
     var isChecked = checkbox1.checked;
@@ -34,10 +15,11 @@ checkbox1.addEventListener('change', function CheckForm() {
     } else { //unchecked
         //execute code here
         let checkbox2 = document.getElementById('checkbox2').checked = false;
-        console.log('not checked');
+        // console.log('not checked');
     }
 })
 
+//Vice-Versa: 
 var checkbox2 = document.getElementById('checkbox2');
 checkbox2.addEventListener('change', function CheckForm() {
     var isChecked = checkbox2.checked;
@@ -49,22 +31,4 @@ checkbox2.addEventListener('change', function CheckForm() {
         console.log('not checked');
     }
 })
-
-
-
-
-// }
-
-// checkbox.addEventListener("change", functionname, false);
-// const checkboxes = [document.body.querySelector(input[type = 'checkbox'])];
-
-// console.log(checkboxes[0, 1]);
-// return checkboxes;
-// }
-
-
-
-
-
-//if either checkbox's state is true, set the other to true as well. 
 
